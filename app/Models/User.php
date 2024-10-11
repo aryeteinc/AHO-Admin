@@ -44,9 +44,4 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-
-    public function canAccessPanel(): bool
-    {
-        return str_ends_with($this->email, '@gmail.com');
-    }
 }
