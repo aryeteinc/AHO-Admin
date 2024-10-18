@@ -4,7 +4,7 @@
 
         <div class="video-container">
             <video autoplay loop muted playsinline class="background-video">
-                <source src="../../../public/storage/video_promocional.mp4" type="video/mp4">
+                <source src="/videos/video_promocional.mp4" type="video/mp4">
                 Tu navegador no soporta la etiqueta de video.
             </video>
 
