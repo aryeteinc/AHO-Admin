@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Asesor;
 use Illuminate\Http\Request;
 
+
+
 class AsesorController extends Controller
 {
     public function index(Request $request)
