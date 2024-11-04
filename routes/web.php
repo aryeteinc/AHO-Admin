@@ -20,6 +20,10 @@ Route::get('/', function () {
 });
 
 Route::get('/asesor', [AsesorController::class, 'show'])->name('asesor.show');
+Route::get('/inmuebles', function(){
+    return Inertia::render('AHO/Inmuebles');
+})->name('inmuebles.show');
+
 
 //Route::get('/dashboard', function () {
 //    return Inertia::render('Dashboard');

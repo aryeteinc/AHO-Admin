@@ -1,8 +1,9 @@
 <template>
     <AppLayout>
-
-
-        <div class="video-container">
+    <Head>
+        <title>Home</title>
+    </Head>
+        <!-- <div class="video-container">
             <video autoplay loop muted playsinline class="background-video">
                 <source src="/videos/video_promocional.mp4" type="video/mp4">
                 Tu navegador no soporta la etiqueta de video.
@@ -29,17 +30,18 @@
             </div>
 
 
-        </div>
+        </div> -->
 
-        <div>
-            <slot />
-        </div>
+        <slot />
     </AppLayout>
 </template>
 
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from "@/Layouts/AppLayout.vue";
+// defineOptions({
+//     layout: AppLayout
+// });
 </script>
 
 <style scoped>

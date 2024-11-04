@@ -1,5 +1,6 @@
 <script setup>
-
+    import { Link } from '@inertiajs/vue3';
+    import { route } from '../../../../vendor/tightenco/ziggy/src/js/index';
 </script>
 
 <template>
@@ -8,8 +9,8 @@
             <img src="/images/Logo_Blanco_sin_fondo.svg" alt="Logo" class="logo-img" />
         </div>
         <nav class="menu">
-            <a href="#" class="menu-item">Inmuebles</a>
-            <a href="#" class="menu-item">Simulador de Crédito</a>
+            <Link :href="route('inmuebles.show')" class="menu-item">Inmuebles</Link>
+            <Link :href="route('asesor.show')" class="menu-item">Asesores</Link>
             <a href="#" class="menu-item">Compañía</a>
             <a href="#" class="menu-item">Contacto</a>
         </nav>
